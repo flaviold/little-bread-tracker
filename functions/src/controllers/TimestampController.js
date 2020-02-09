@@ -1,5 +1,5 @@
 class TimestampController {
-  async index(req, res) {
+  index(req, res) {
     return res.json({
       timestamp: Date.now()
     });
