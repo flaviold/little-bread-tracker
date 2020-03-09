@@ -1,0 +1,25 @@
+.wrapper {
+    background: #EEE9DC;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+}
+
+.login {
+    height: 100%;
+    width: 40vw;
+    max-width: 500px;
+    background: #AF7543;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login .title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
