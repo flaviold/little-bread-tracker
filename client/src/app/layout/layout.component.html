@@ -1,26 +1,28 @@
 <div class="wrapper">
     <nav>
         <div class="item">
-            <a href="#"><i class="fas fa-plus"></i></a>
-            <label>Cadastro</label>
+            <a href="#"><i class="fas fa-plus"></i>
+                <label>Cadastro</label></a>
         </div>
-
         <div class="item">
-            <a href="#"><i class="fas fa-plus"></i></a>
-            <label>Histórico</label>
+            <a href="#"><i class="fas fa-history"></i><label>Histórico</label></a>
         </div>
-
         <div class="item">
-            <a href="#"><i class="fas fa-plus"></i></a>
-            <label>Pendentes</label>
+            <a href="#"><i class="fas fa-bread-slice"></i><label>Pendentes</label></a>
         </div>
-
     </nav>
 
     <div class="right">
         <header>
             <a href="#"><img src="../../assets/logo.svg" alt=""></a>
         </header>
-        <router-outlet></router-outlet>
+
+        <div class="content-body">
+            <router-outlet></router-outlet>
+        </div>
+
+        <footer>
+            <span>urlPaozinho.io</span>
+        </footer>
     </div>
 </div>

@@ -9,8 +9,14 @@ header {
 }
 
 img{
-  margin-right: 3vw;
-  margin-top: 1vw;
+  margin-right: 50px;
+  margin-top: 25px;
+  max-width: 100%;
+}
+
+header img:hover{
+  width: 63px;
+  transition: .3s ease;
 }
 
 nav{
@@ -41,14 +47,52 @@ nav{
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .item label{
   font-family: 'Nunito';
-  color: #F1F1F1;
+ // color: #F1F1F1;
 }
 
+
 .item a{
-  color: #F1F1F1;
-  margin-top: 40px;
+  color: #F1F1F1;  
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
+
+.item a label{  
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+
+.item a:hover{
+  color: #FFAC3F;
+  transition: 0.1s ease;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+}
+
+.content-body{
+  flex: 1;
+}
+
+footer {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  
+  span {
+    font-size: #807A7A;
+    font-family: 'Nunito';
+  }
+}
+
+
