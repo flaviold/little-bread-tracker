@@ -1,1 +1,8 @@
-<p>home works!</p>
+<div class="wrapper">
+    <div class="item">
+        <p><i [class]="escolherIcon(proximoPao)"></i> O pãozinho de {{ buscarTipo() }} do {{ proximoPao.nome }} será {{ proximoPao.data }}</p>
+    </div>
+    <div *ngFor="let item of listaAniversarios" class="item2">
+        <p><i [class]="escolherIcon(item)"></i> {{ item.data }}</p>
+    </div>
+</div>

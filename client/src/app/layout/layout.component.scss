@@ -6,13 +6,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  
+  img{
+    margin-right: 50px;
+    margin-top: 25px;
+    max-width: 100%;
+  }
 }
 
-img{
-  margin-right: 50px;
-  margin-top: 25px;
-  max-width: 100%;
-}
+
 
 header img:hover{
   width: 63px;
@@ -95,4 +97,49 @@ footer {
   }
 }
 
+@media (max-width: 900px){
+  .wrapper{
+     height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .right{
+    order:1;
+    display: flex;
+  }
+
+  footer{
+    display: none;
+  }
+  
+  nav{
+    order: 3;
+    width: 100vw;
+    height: 12vh;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    align-self: flex-end;
+    
+    .item{
+      margin: 0 30px;
+      a{
+        font-size: 30px;
+      }
+    }
+  }
+
+  header {
+    width: 100vw;
+    align-items: center;
+    justify-content: flex-end;
+    
+    img{
+      margin-right: 30px;
+      margin-top: 25px;
+      width: 50px;
+    }
+  }
+}
 
