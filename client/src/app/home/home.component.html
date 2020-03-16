@@ -1,8 +1,6 @@
 <div class="wrapper">
-    <div class="item">
-        <p><i [class]="escolherIcon(proximoPao)"></i> O pãozinho de {{ buscarTipo() }} do {{ proximoPao.nome }} será {{ proximoPao.data }}</p>
-    </div>
-    <div *ngFor="let item of listaAniversarios" class="item2">
-        <p><i [class]="escolherIcon(item)"></i> {{ item.data }}</p>
+    <h2>Faltam X dias</h2>
+    <div *ngFor="let item of listaAniversarios; let i = index" [ngClass]="{ 'item': i == 0, 'item2': i > 0 }">
+        <p><i [class]="escolherIcon(item)"></i> <span>O pãozinho de {{ buscarTipo(item) }} do {{ item.nome }} será </span>{{ item.data }}</p>
     </div>
 </div>
