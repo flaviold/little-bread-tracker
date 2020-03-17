@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
     background: #EEE9DC;
     width: 100vw;
@@ -90,3 +94,40 @@
     background: #fff;
     text-align: center;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 10vh;
+  width: 60vw;
+  min-width: calc(100vw - 600px);
+  background: #EEE9DC;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.carousel {
+  flex: 1;
+  display: flex;
+}
+
+.info-content {
+  background: #eee;
+  flex: 1;
+
+  div {
+    text-align: center;
+    border: 1px dashed black;
+    top: 100px;
+  }
+}
+
+// @keyframes activeFromLeft {
+//   from: {
+//     top:
+//   }
+// }
