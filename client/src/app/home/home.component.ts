@@ -9,10 +9,12 @@ import { Paozinho } from '../models/paozinho.component'
 export class HomeComponent implements OnInit {
   listaAniversarios: Array<any> = [{ tipo: 1, nome: 'Waschington', data: '20/08/2020' }, { tipo: 2, nome: 'Flavio', data: '12/05/2020' }, { tipo: 3, data: '10/06/2020', nome: 'Ronny' }, { tipo: 1, nome: 'Chico', data: '10/07/2020' }, { tipo: 2, nome: 'Teste', data: '10/07/2020' }];
   proximoPao: any;
+  dataTeste;
+
   constructor() { }
 
   ngOnInit() {
-   // this.contador();
+    this.dataTeste = new Date(2020, 1);
   }
 
   buscarTipo(item) {
@@ -35,20 +37,14 @@ export class HomeComponent implements OnInit {
     }
   }
 
-//   function days_between(date1, date2) {
+  contadorDias(date2) {
+    let ONE_DAY = 1000 * 60 * 60 * 24
 
-//   // The number of milliseconds in one day
-//   var ONE_DAY = 1000 * 60 * 60 * 24
+    let date1_ms = new Date().getTime()
+    let date2_ms = date2.getTime()
 
-//   // Convert both dates to milliseconds
-//   var date1_ms = date1.getTime()
-//   var date2_ms = date2.getTime()
+    var difference_ms = Math.abs(date1_ms - date2_ms)
 
-//   // Calculate the difference in milliseconds
-//   var difference_ms = Math.abs(date1_ms - date2_ms)
-
-//   // Convert back to days and return
-//   return Math.round(difference_ms / ONE_DAY)
-
-// }
+    return Math.round(difference_ms / ONE_DAY)
+  }
 }
